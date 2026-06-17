@@ -221,7 +221,6 @@ async function allCardsLoad() {
   const datas = await res.json();
   console.log(datas.data.length);
   displayAllCards(datas.data);
-  // hideSpinner();
 }
 allCardsLoad();
 
@@ -237,7 +236,6 @@ async function clickButton(id) {
   const allBtn = document.getElementById(id);
   const buttons = document.getElementsByClassName("button_common");
 
-  // jehetu classname diya onekgulo class dhora jay tai ekta ekta kore classlist remove korte hobe
   for (let btn of buttons) {
     btn.classList.remove("bg-blue-500", "text-white");
   }
